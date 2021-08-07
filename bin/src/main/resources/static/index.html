@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="/css/main.css" />
+<style>
+.dropbtn {
+	background-color: #9aa1f5;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="upload-container">
+		<div class="upload-header">
+			<h2>Import the CSV file into Database</h2>
+		</div>
+		<div class="upload-content">
+			<div class="single-upload">
+				<h3>Upload the CSV File</h3>
+				<form id="singleUploadForm" name="singleUploadForm">
+					<input id="singleFileUploadInput" type="file" name="file"
+						class="file-input" required />
+					<button type="submit" class="primary submit-btn">Submit</button>
+				</form>
+				<div class="upload-response">
+					<div id="singleFileUploadError"></div>
+					<div id="singleFileUploadSuccess"></div>
+				</div>
+
+				<!--<form>
+                <label for="Sel">Select Event Name</label><br/>
+                <select>
+                <option> <a href="experienceLetter.html"></a>Awards Certificate</option>
+                <option> <a href="experienceLetter.html"></a>Experience Letter</option>
+                <option value="volunteer.html">Volunteer</option>
+                <option value="participation.Certificate.html">Participation Certificate</option>
+                </select>
+                </form>
+                -->
+
+				<div class="dropdown">
+					<button class="dropbtn">Select Event Name</button>
+					<div class="dropdown-content">
+						<a href="awardCertificate.html">Awards Certificate</a> <a href="experienceLetter.html">Experience
+							Letter</a> <a href="volunteer.html">Volunteer</a> <a href="participationcertificate.html">Participation
+							Certificate</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="/js/main.js"></script>
+</body>
+</html>
